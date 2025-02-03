@@ -1,7 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useAuthStore from "../../store/AuthStore";
 
 export default function Signup() {
+    const { signup } = useAuthStore();
+    const Navigate = useNavigate();
+
+    function handleSignup() {
+        signup();
+        Navigate("/");
+    }
+
     return (
         <div className="w-full h-dvh space-y-5 flex flex-col  items-center bg-black">
             <div className="top-40 space-y-5 relative max-sm:top-20">
@@ -43,7 +52,10 @@ export default function Signup() {
                             placeholder="Confirm password"
                         />
 
-                        <button className="mt-3 p-[5px] text-[14px] text-white bg-[#0068ac] rounded">
+                        <button
+                            onClick={handleSignup}
+                            className="mt-3 p-[5px] text-[14px] text-white bg-[#0068ac] rounded"
+                        >
                             Sign up
                         </button>
                     </div>
