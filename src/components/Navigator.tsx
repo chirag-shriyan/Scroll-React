@@ -5,6 +5,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { LuMessageCircleMore } from "react-icons/lu";
 import { MdHomeFilled, MdOutlineAddBox } from "react-icons/md";
 import { RiCompass3Line } from "react-icons/ri";
+import Notifications from "./Notifications";
 
 export default function Navigator() {
     return (
@@ -38,10 +39,12 @@ export default function Navigator() {
                     <p className=" text-white">Chats</p>
                 </div>
 
-                <div className="p-3 space-x-2 flex items-center hover:bg-[#1a1a1a] rounded-md">
-                    <IoNotificationsOutline color="white" size={30} />
-                    <p className=" text-white">Notifications</p>
-                </div>
+                <Notifications>
+                    <div className="p-3 space-x-2 flex items-center hover:bg-[#1a1a1a] rounded-md">
+                        <IoNotificationsOutline color="white" size={30} />
+                        <p className=" text-white">Notifications</p>
+                    </div>
+                </Notifications>
 
                 <div className="p-3 space-x-2 flex items-center hover:bg-[#1a1a1a] rounded-md">
                     <MdOutlineAddBox color="white" size={30} />
