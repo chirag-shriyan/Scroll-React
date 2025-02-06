@@ -8,8 +8,8 @@ export default function Home() {
         <>
             <div className="w-full h-dvh flex">
                 <Navigator />
-                <div className="w-full h-dvh flex justify-center bg-black overflow-y-auto max-sm:relative max-sm:top-[50px]">
-                    <div className="w-[630px] bg-red-300">
+                <div className="w-full h-dvh flex justify-center bg-black max-sm:relative max-sm:top-[50px]">
+                    <div className="w-[630px]">
                         {/* <h1 className="text-white text-3xl">Home</h1>
                         <Link to={"/login"} className="text-blue-400">
                             Login
@@ -20,15 +20,19 @@ export default function Home() {
                         </Link> */}
 
                         {/* Status Bar */}
-                        <div className="w-full h-20 my-4 p-2 bg-white"></div>
+                        <div className="w-full h-[100px] my-4 p-2 bg-white"></div>
 
                         {/* Posts Container */}
-                        <div className="w-full bg-red-400">
+                        <div className="w-full flex flex-col items-center overflow-y-auto">
+                            <Post />
+
+                            <Post />
+                            <Post />
                             <Post />
                         </div>
                     </div>
 
-                    <div className="w-[320px] ml-16 text-white bg-red-200">
+                    <div className="w-[320px] ml-16 text-white bg-red-200 max-sm:hidden">
                         Followers
                     </div>
                 </div>
