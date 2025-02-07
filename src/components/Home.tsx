@@ -32,8 +32,123 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="w-[320px] ml-16 text-white bg-red-200 max-sm:hidden">
-                        Followers
+                    {/* Switch Account */}
+                    <div className="w-[320px] mt-9 ml-16 text-white  max-sm:hidden">
+                        <div className="w-full h-[44px] my-3 mb-6 px-4 flex justify-between items-center max-sm:mx-3">
+                            <div className="space-x-3 flex items-center">
+                                {" "}
+                                <img
+                                    src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg"
+                                    alt=""
+                                    className="w-[44px] h-[44px] rounded-full"
+                                />
+                                <div>
+                                    <p className="text-[14px] leading-[18px] font-semibold">
+                                        chirag_shriyan
+                                    </p>
+                                    <p className="text-[14px] leading-[18px] text-[#a8a8a8]">
+                                        chirag Shriyan
+                                    </p>
+                                </div>
+                            </div>
+                            <p className="text-[12px] text-[#0095f6]">Switch</p>
+                        </div>
+
+                        <div className="px-4 flex justify-between items-center">
+                            <p className="text-[14px] text-[#a8a8a8] font-semibold">
+                                Suggested for you
+                            </p>
+                            <p className="text-[12px] font-semibold">See All</p>
+                        </div>
+
+                        {/* Suggested for you */}
+
+                        <div className="py-4 space-y-4">
+                            <div className="w-full h-[44px] px-4 flex justify-between items-center max-sm:mx-3">
+                                <div className="space-x-3 flex items-center">
+                                    {" "}
+                                    <img
+                                        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg"
+                                        alt=""
+                                        className="w-[44px] h-[44px] rounded-full"
+                                    />
+                                    <div>
+                                        <p className="text-[14px] leading-[18px] font-semibold">
+                                            chirag_shriyan
+                                        </p>
+                                        <p className="text-[14px] leading-[18px] text-[#a8a8a8]">
+                                            chirag Shriyan
+                                        </p>
+                                    </div>
+                                </div>
+                                <p className="text-[12px] text-[#0095f6]">
+                                    Follow
+                                </p>
+                            </div>
+                            <div className="w-full h-[44px] px-4 flex justify-between items-center max-sm:mx-3">
+                                <div className="space-x-3 flex items-center">
+                                    {" "}
+                                    <img
+                                        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg"
+                                        alt=""
+                                        className="w-[44px] h-[44px] rounded-full"
+                                    />
+                                    <div>
+                                        <p className="text-[14px] leading-[18px] font-semibold">
+                                            chirag_shriyan
+                                        </p>
+                                        <p className="text-[14px] leading-[18px] text-[#a8a8a8]">
+                                            chirag Shriyan
+                                        </p>
+                                    </div>
+                                </div>
+                                <p className="text-[12px] text-[#0095f6]">
+                                    Follow
+                                </p>
+                            </div>
+                            <div className="w-full h-[44px] px-4 flex justify-between items-center max-sm:mx-3">
+                                <div className="space-x-3 flex items-center">
+                                    {" "}
+                                    <img
+                                        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg"
+                                        alt=""
+                                        className="w-[44px] h-[44px] rounded-full"
+                                    />
+                                    <div>
+                                        <p className="text-[14px] leading-[18px] font-semibold">
+                                            chirag_shriyan
+                                        </p>
+                                        <p className="text-[14px] leading-[18px] text-[#a8a8a8]">
+                                            chirag Shriyan
+                                        </p>
+                                    </div>
+                                </div>
+                                <p className="text-[12px] text-[#0095f6]">
+                                    Follow
+                                </p>
+                            </div>
+                            <div className="w-full h-[44px] px-4 flex justify-between items-center max-sm:mx-3">
+                                <div className="space-x-3 flex items-center">
+                                    {" "}
+                                    <img
+                                        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg"
+                                        alt=""
+                                        className="w-[44px] h-[44px] rounded-full"
+                                    />
+                                    <div>
+                                        <p className="text-[14px] leading-[18px] font-semibold">
+                                            chirag_shriyan
+                                        </p>
+                                        <p className="text-[14px] leading-[18px] text-[#a8a8a8]">
+                                            chirag Shriyan
+                                        </p>
+                                    </div>
+                                </div>
+                                <p className="text-[12px] text-[#0095f6]">
+                                    Follow
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
