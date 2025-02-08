@@ -6,6 +6,7 @@ import { LuMessageCircleMore } from "react-icons/lu";
 import { MdHomeFilled, MdOutlineAddBox } from "react-icons/md";
 import { RiCompass3Line } from "react-icons/ri";
 import Notifications from "./Notifications";
+import { Link } from "react-router-dom";
 
 export default function Navigator() {
     return (
@@ -14,15 +15,21 @@ export default function Navigator() {
             <div className="min-w-[335px] h-dvh p-3 space-y-1 flex flex-col bg-black border-r border-[#262626] max-sm:hidden">
                 <h1 className="mt-4 mb-5 p-3 text-4xl text-white">Scroll</h1>
 
-                <div className="p-3 space-x-2 flex items-center hover:bg-[#1a1a1a] rounded-md">
+                <Link
+                    to={"/"}
+                    className="p-3 space-x-2 flex items-center hover:bg-[#1a1a1a] rounded-md"
+                >
                     <MdHomeFilled color="white" size={30} />
                     <p className=" text-white">Home</p>
-                </div>
+                </Link>
 
-                <div className="p-3 space-x-2 flex items-center hover:bg-[#1a1a1a] rounded-md">
+                <Link
+                    to={"/search"}
+                    className="p-3 space-x-2 flex items-center hover:bg-[#1a1a1a] rounded-md"
+                >
                     <CiSearch color="white" size={30} />
                     <p className=" text-white">Search</p>
-                </div>
+                </Link>
 
                 <div className="p-3 space-x-2 flex items-center hover:bg-[#1a1a1a] rounded-md">
                     <RiCompass3Line color="white" size={30} />
@@ -68,8 +75,12 @@ export default function Navigator() {
                     </div>
                 </div>
                 <div className="w-full h-[50px] px-3 flex justify-around items-center bg-black border-t border-[#262626] fixed bottom-0 z-50">
-                    <MdHomeFilled color="white" size={30} />
-                    <CiSearch color="white" size={30} />
+                    <Link to={"/"}>
+                        <MdHomeFilled color="white" size={30} />
+                    </Link>
+                    <Link to={"/search"}>
+                        <CiSearch color="white" size={30} />
+                    </Link>
                     <RiCompass3Line color="white" size={30} />
                     <LuMessageCircleMore color="white" size={30} />
                     <CgProfile color="white" size={30} />

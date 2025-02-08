@@ -30,25 +30,25 @@ export default function Signup() {
                     <div className="w-full flex flex-col space-y-2">
                         <input
                             type="text"
-                            className="p-2 text-[14px] text-white border border-[#363636] rounded"
+                            className="p-2 text-[14px] text-white bg-[#121212] border border-[#363636] rounded"
                             placeholder="Username"
                         />
 
                         <input
                             type="text"
-                            className="p-2 text-[14px] text-white border border-[#363636] rounded"
+                            className="p-2 text-[14px] text-white bg-[#121212] border border-[#363636] rounded"
                             placeholder="Email"
                         />
 
                         <input
                             type="text"
-                            className="p-2 text-[14px] text-white border border-[#363636] rounded"
+                            className="p-2 text-[14px] text-white bg-[#121212] border border-[#363636] rounded"
                             placeholder="Password"
                         />
 
                         <input
                             type="text"
-                            className="p-2 text-[14px] text-white border border-[#363636] rounded"
+                            className="p-2 text-[14px] text-white bg-[#121212] border border-[#363636] rounded"
                             placeholder="Confirm password"
                         />
 

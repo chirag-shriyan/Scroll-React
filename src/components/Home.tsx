@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <div className="w-full h-dvh flex">
                 <Navigator />
-                <div className="w-full h-dvh flex justify-center bg-black max-sm:relative max-sm:top-[50px]">
+                <div className="w-full h-full flex justify-center bg-black overflow-y-auto max-sm:relative max-sm:top-[50px] max-sm:pb-[50px]">
                     <div className="w-[630px]">
                         {/* <h1 className="text-white text-3xl">Home</h1>
                         <Link to={"/login"} className="text-blue-400">
@@ -23,7 +23,7 @@ export default function Home() {
                         <div className="w-full h-[100px] my-4 p-2 bg-white"></div>
 
                         {/* Posts Container */}
-                        <div className="w-full flex flex-col items-center overflow-y-auto">
+                        <div className="w-full flex flex-col items-center">
                             <Post />
 
                             <Post />

@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Login from "./components/auth/Login";
 import Signup from "./components/auth/Signup";
 import useAuthStore from "./store/AuthStore";
+import Search from "./components/Search";
 
 function App() {
     const { isLoggedIn } = useAuthStore();
@@ -22,6 +23,7 @@ function App() {
         <>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/search" element={<Search />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
             </Routes>
